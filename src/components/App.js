@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -15,12 +15,11 @@ import NotFound from './NotFound';
 import Featured from './Featured';
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter basename="/course-directory">
     <div className="container">
       <Header />
       
       <Switch>
-        <BrowserRouter basename="/course-directory">
         <Route exact path="/" component={Home} />
         <Route path="/about" render={ () => <About title='About' /> } />
         <Route exact path="/teachers" component={Teachers} />
@@ -29,7 +28,7 @@ const App = () => (
         <Route component={NotFound} />
       </Switch>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
