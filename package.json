@@ -2,7 +2,7 @@
   "name": "course-directory",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gisantiago.github.io/course-directory",
+  "homepage": "https://gisantiago.github.io/course-directory/",
   "dependencies": {
     "build": "^0.1.4",
     "gh-pages": "^2.0.1",
