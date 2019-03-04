@@ -15,7 +15,7 @@ import NotFound from './NotFound';
 import Featured from './Featured';
 
 const App = () => (
-  <HashRouter basename="/course-directory">
+  <HashRouter >
     <div className="container">
       <Header />
       
