@@ -21,7 +21,7 @@ const App = () => (
       
       <Switch>
         <BrowserRouter basename="/course-directory">
-        
+        <Route exact path="/" component={Home} />
         <Route path="/about" render={ () => <About title='About' /> } />
         <Route exact path="/teachers" component={Teachers} />
         <Route path="/teachers/:topic/:name" component={Featured} />
